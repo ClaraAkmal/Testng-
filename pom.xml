@@ -56,8 +56,8 @@
         <version>3.2.5</version>
         <configuration>
           <suiteXmlFiles>
-            <!-- This links Maven to your specific TestNG configuration -->
-            <suiteXmlFile>src/test/java/resources/testng.xml</suiteXmlFile>
+            <!-- FIXED: Removed 'java' from path to match your project structure -->
+            <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile>
           </suiteXmlFiles>
           <testFailureIgnore>true</testFailureIgnore>
         </configuration>
