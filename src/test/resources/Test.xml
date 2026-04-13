@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Banking App Suite">
+
+    <!-- Test 1: Run ONLY Smoke tests first -->
+    <test name="Smoke Phase">
+        <groups>
+            <run>
+                <include name="Smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.BankingAppTest"/>
+        </classes>
+    </test>
+
+    <!-- Test 2: Run Regression tests afterward -->
+    <test name="Regression Phase">
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.BankingAppTest"/>
+        </classes>
+    </test>
+
+</suite>

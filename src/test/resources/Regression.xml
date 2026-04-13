@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Regression Only Suite">
+    <!-- Bonus: Separate XML for regression only as per Lab 8 Hand-On 3 -->
+    <test name="RegressionTests">
+        <groups>
+            <run>
+                <include name="Regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="org.example.BankingAppTest"/>
+        </classes>
+    </test>
+</suite>
