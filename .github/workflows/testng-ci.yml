@@ -21,7 +21,7 @@ jobs:
 
       - name: Run TestNG Suite
         # Note: Added -DsuiteXmlFile to match your project's specific path
-        run: mvn test -DsuiteXmlFile=src/test/resources/testng.xml
+        run: mvn test -DsuiteXmlFile=src/test/resources/Test.xml
 
       - name: Upload Test Results
         if: always()
